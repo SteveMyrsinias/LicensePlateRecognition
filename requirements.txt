@@ -1,0 +1,6 @@
+opencv-python~=4.6.0.66
+matplotlib~=3.3.3
+numpy~=1.23.2
+easyocr~=1.6.2
+torch~=1.13.0
+pytesseract~=0.3.10
