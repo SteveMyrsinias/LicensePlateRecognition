@@ -5,9 +5,8 @@ import cv2
 from time import time
 import ocr
 
-pytesseract.pytesseract.tesseract_cmd = r'c:\\users\\ilias\\appdata\\local\\programs\\python\\python39\scripts\\pytesseract.exe'
 
-filename = 'Project\IMG_8716.mp4'
+filename = ' '
 class plateRecognition:
     """
     Class implements Yolo5 model to make inferences on a  video using Opencv2.
@@ -26,7 +25,7 @@ class plateRecognition:
         Creates a new video streaming object to extract video frame by frame to make prediction on.
         :return: opencv2 video capture object, with lowest quality frame available for video.
         """
-        self.path_to_video = "IMG_8716.mp4"
+        self.path_to_video = filename
         return cv2.VideoCapture(self.path_to_video)
         # self.path_to_video = "./test1.png"
         # return cv2.imread(self.path_to_video)
